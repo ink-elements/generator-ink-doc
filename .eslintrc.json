@@ -1,0 +1,12 @@
+{
+  "extends": "standard",
+  "globals": {
+    "describe": true,
+    "beforeAll": true,
+    "it": true
+  },
+  "rules": {
+    "space-before-function-paren": ["error", "never"],
+    "padded-blocks": 0
+  }
+}
