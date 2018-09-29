@@ -1,9 +1,0 @@
-{
-  "generator-node": {
-    "promptValues": {
-      "authorName": "Ricardo Gladwell",
-      "authorEmail": "ricardo@gladwell.me",
-      "authorUrl": "https://gladwell.me"
-    }
-  }
-}
