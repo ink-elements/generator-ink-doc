@@ -37,7 +37,7 @@
     "yeoman-test": "^1.7.0"
   },
   "engines": {
-    "npm": ">= 4.0.0"
+    "npm": ">= 6.0.0"
   },
   "dependencies": {
     "yeoman-generator": "^2.0.1",
