@@ -30,8 +30,8 @@
   },
   "scripts": {
     "lint": "eslint *.js && htmllint *.html && stylelint *.css assets/styles/**/*.css",
-    "build": "npm run lint && grunt",
-    "publish": "npm run build && ink publish",
+    "build": "npm run --scripts-prepend-node-path=true lint && grunt",
+    "publish": "npm run --scripts-prepend-node-path=true build && ink publish",
     "clean": "grunt clean",
     "start": "grunt run"
   }
