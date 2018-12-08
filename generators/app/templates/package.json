@@ -24,7 +24,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-npmcopy": "^0.1.0",
     "htmllint-cli": "0.0.7",
-    "ink-cli": "^0.0.0",
+    "ink-cli": "^0.0.4",
     "stylelint": "^9.5.0",
     "stylelint-config-standard": "^18.2.0"
   },
