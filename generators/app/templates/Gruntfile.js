@@ -33,7 +33,7 @@ module.exports = function (grunt) {
       },
       html: {
         files: ['index.html', 'package.json'],
-        tasks: ['copy:main', 'string-replace']
+        tasks: ['copy:main']
       },
       assets: {
         files: ['assets/**'],
