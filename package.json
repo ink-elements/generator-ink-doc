@@ -3,11 +3,7 @@
   "version": "0.1.5",
   "description": "",
   "homepage": "",
-  "author": {
-    "name": "Ricardo Gladwell",
-    "email": "ricardo@gladwell.me",
-    "url": "https://gladwell.me"
-  },
+  "author": "R.G. Wood <ric@grislyeye.com> (https://grislyeye.com)",
   "files": [
     "generators"
   ],
