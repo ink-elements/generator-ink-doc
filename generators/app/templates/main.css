@@ -1,5 +1,26 @@
 @import url('vendor/normalize.css/normalize.css');
 
+@page {
+  size: A4;
+
+  @bottom-center {
+    content: counter(page);
+  }
+}
+
+@page cover {
+  @bottom-center {
+    content: none;
+  }
+}
+
+@page title {
+}
+
+#cover {
+  page: cover;
+}
+
 #cover header {
   width: 100%;
 }
@@ -8,9 +29,30 @@
   text-align: center;
 }
 
+#title {
+  page: title;
+}
+
 #title footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding-bottom: 3em;
+}
+
+@media screen {
+
+  body {
+    background-color: whitesmoke;
+  }
+
+  .pagedjs_page {
+    background-color: #fdfdfd;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 0 1px var(--color-mbox);
+  }
+
 }

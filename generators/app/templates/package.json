@@ -6,7 +6,7 @@
     "email": "<%= author.email %>"
   },
   "dependencies": {
-    "ink-elements": "^0.4.2",
+    "ink-elements": "^0.5.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

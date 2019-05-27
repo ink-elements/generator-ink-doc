@@ -7,54 +7,45 @@
 
   <title><%= title %></title>
 
-  <link href="main.css" rel="stylesheet" />
+  <script src="vendor/pagedjs/dist/paged.polyfill.js"></script>
   <script src="vendor/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-  <script type="module" src="vendor/ink-elements/ink-doc.js"></script>
+  <script type="module" src="vendor/ink-elements/ink-page-xref.js"></script>
+
+  <link href="main.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <main>
+  <section id="cover">
+    <header>
+      <h1><%= title %></h1>
+      <p>By <%= author.name %></p>
+    </header>
+  </section>
 
-    <ink-doc>
-      <ink-page id="cover">
-        <header>
-          <h1><%= title %></h1>
-          <p>By <%= author.name %></p>
-        </header>
-      </ink-page>
+  <section id="title">
+    <footer class="legal">
+      <p>This work is copyright <%= author.name %> <%= copyright.year %>.</p>
+    </footer>
+  </section>
 
-      <ink-page id="title" class="content">
+  <h3>Heading 1</h3>
 
-        <footer class="legal">
-          <p>This work is copyright <%= author.name %> <%= copyright.year %>.</p>
-        </footer>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      </ink-page>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <ink-page class="content">
-        <h3>Heading 1</h3>
+  <h4>Sub-Heading 2</h4>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nunc mi ipsum faucibus. Mi quis hendrerit dolor magna eget est lorem ipsum. Mauris a diam maecenas sed enim ut sem. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Nec dui nunc mattis enim. Bibendum ut tristique et egestas quis ipsum suspendisse. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Purus gravida quis blandit turpis cursus in hac habitasse platea. Rutrum tellus pellentesque eu tincidunt. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Hac habitasse platea dictumst vestibulum rhoncus est. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Sagittis id consectetur purus ut faucibus pulvinar elementum. Amet dictum sit amet justo donec enim diam vulputate ut.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Ultrices dui sapien eget mi. In eu mi bibendum neque. Ut tortor pretium viverra suspendisse potenti. Nullam eget felis eget nunc. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. At quis risus sed vulputate odio ut. Mauris cursus mattis molestie a. Gravida in fermentum et sollicitudin ac orci. Amet commodo nulla facilisi nullam vehicula ipsum. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Lacus viverra vitae congue eu consequat ac. Pretium viverra suspendisse potenti nullam ac. Venenatis tellus in metus vulputate. Tincidunt eget nullam non nisi est sit amet. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
 
-        <h4>Sub-Heading 2</h4>
+  <p>Nulla facilisi etiam dignissim diam quis enim lobortis. Dui ut ornare lectus sit amet est placerat in egestas. Lorem ipsum dolor sit amet consectetur adipiscing. Risus in hendrerit gravida rutrum. Erat nam at lectus urna duis convallis convallis tellus. Risus feugiat in ante metus dictum at tempor commodo. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. At quis risus sed vulputate odio ut. Sed euismod nisi porta lorem mollis aliquam ut. Purus viverra accumsan in nisl. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Tellus in metus vulputate eu scelerisque felis imperdiet. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Senectus et netus et malesuada fames. Odio ut enim blandit volutpat maecenas volutpat. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Vitae congue mauris rhoncus aenean vel elit scelerisque. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nunc mi ipsum faucibus. Mi quis hendrerit dolor magna eget est lorem ipsum. Mauris a diam maecenas sed enim ut sem. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Nec dui nunc mattis enim. Bibendum ut tristique et egestas quis ipsum suspendisse. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Purus gravida quis blandit turpis cursus in hac habitasse platea. Rutrum tellus pellentesque eu tincidunt. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Hac habitasse platea dictumst vestibulum rhoncus est. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Sagittis id consectetur purus ut faucibus pulvinar elementum. Amet dictum sit amet justo donec enim diam vulputate ut.</p>
+  <p>Ultrices dui sapien eget mi proin. Aliquam purus sit amet luctus. Odio aenean sed adipiscing diam. Sed libero enim sed faucibus turpis. Enim praesent elementum facilisis leo. Et pharetra pharetra massa massa ultricies. Id interdum velit laoreet id. Mauris pellentesque pulvinar pellentesque habitant. Amet dictum sit amet justo donec enim diam vulputate ut. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Iaculis at erat pellentesque adipiscing commodo elit. Leo in vitae turpis massa sed elementum tempus egestas sed. Facilisi morbi tempus iaculis urna id volutpat. In aliquam sem fringilla ut morbi. Hendrerit gravida rutrum quisque non tellus orci. Semper eget duis at tellus at urna. Pretium nibh ipsum consequat nisl. Purus in mollis nunc sed id semper risus in.</p>
 
-        <p>Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Ultrices dui sapien eget mi. In eu mi bibendum neque. Ut tortor pretium viverra suspendisse potenti. Nullam eget felis eget nunc. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. At quis risus sed vulputate odio ut. Mauris cursus mattis molestie a. Gravida in fermentum et sollicitudin ac orci. Amet commodo nulla facilisi nullam vehicula ipsum. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Lacus viverra vitae congue eu consequat ac. Pretium viverra suspendisse potenti nullam ac. Venenatis tellus in metus vulputate. Tincidunt eget nullam non nisi est sit amet. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
-
-        <p>Nulla facilisi etiam dignissim diam quis enim lobortis. Dui ut ornare lectus sit amet est placerat in egestas. Lorem ipsum dolor sit amet consectetur adipiscing. Risus in hendrerit gravida rutrum. Erat nam at lectus urna duis convallis convallis tellus. Risus feugiat in ante metus dictum at tempor commodo. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. At quis risus sed vulputate odio ut. Sed euismod nisi porta lorem mollis aliquam ut. Purus viverra accumsan in nisl. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Tellus in metus vulputate eu scelerisque felis imperdiet. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Senectus et netus et malesuada fames. Odio ut enim blandit volutpat maecenas volutpat. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Vitae congue mauris rhoncus aenean vel elit scelerisque. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu.</p>
-
-        <p>Ultrices dui sapien eget mi proin. Aliquam purus sit amet luctus. Odio aenean sed adipiscing diam. Sed libero enim sed faucibus turpis. Enim praesent elementum facilisis leo. Et pharetra pharetra massa massa ultricies. Id interdum velit laoreet id. Mauris pellentesque pulvinar pellentesque habitant. Amet dictum sit amet justo donec enim diam vulputate ut. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Iaculis at erat pellentesque adipiscing commodo elit. Leo in vitae turpis massa sed elementum tempus egestas sed. Facilisi morbi tempus iaculis urna id volutpat. In aliquam sem fringilla ut morbi. Hendrerit gravida rutrum quisque non tellus orci. Semper eget duis at tellus at urna. Pretium nibh ipsum consequat nisl. Purus in mollis nunc sed id semper risus in.</p>
-
-        <p>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Quam nulla porttitor massa id neque aliquam vestibulum morbi. Odio ut sem nulla pharetra diam. Tempor orci eu lobortis elementum nibh tellus. Duis convallis convallis tellus id. Fermentum posuere urna nec tincidunt praesent semper. Iaculis at erat pellentesque adipiscing commodo elit at. Aliquet nec ullamcorper sit amet. Nunc mattis enim ut tellus elementum sagittis. Amet nisl purus in mollis nunc sed. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Metus dictum at tempor commodo ullamcorper a lacus. Diam donec adipiscing tristique risus nec feugiat in. Elementum sagittis vitae et leo duis ut diam. Eget gravida cum sociis natoque.</p>
-      </ink-page>
-
-    </ink-doc>
-
-  </main>
+  <p>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Quam nulla porttitor massa id neque aliquam vestibulum morbi. Odio ut sem nulla pharetra diam. Tempor orci eu lobortis elementum nibh tellus. Duis convallis convallis tellus id. Fermentum posuere urna nec tincidunt praesent semper. Iaculis at erat pellentesque adipiscing commodo elit at. Aliquet nec ullamcorper sit amet. Nunc mattis enim ut tellus elementum sagittis. Amet nisl purus in mollis nunc sed. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Metus dictum at tempor commodo ullamcorper a lacus. Diam donec adipiscing tristique risus nec feugiat in. Elementum sagittis vitae et leo duis ut diam. Eget gravida cum sociis natoque.</p>
 
 </body>
 </html>

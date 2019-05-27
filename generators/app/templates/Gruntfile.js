@@ -43,7 +43,8 @@ module.exports = function (grunt) {
         files: [
           'node_modules/ink-elements/**',
           'node_modules/@webcomponents/**',
-          'node_modules/@polymer/**'
+          'node_modules/@polymer/**',
+          'node_modules/pagedjs/**'
         ],
         tasks: ['npmcopy:dist']
       }
@@ -73,7 +74,8 @@ module.exports = function (grunt) {
           '@polymer': '@polymer',
           '@webcomponents': '@webcomponents',
           'ink-elements': 'ink-elements',
-          'normalize.css': 'normalize.css'
+          'normalize.css': 'normalize.css',
+          'pagedjs': 'pagedjs'
         }
       }
     }
