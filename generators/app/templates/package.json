@@ -24,14 +24,14 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-npmcopy": "^0.2.0",
     "htmllint-cli": "0.0.7",
-    "ink-cli": "^0.0.8",
+    "scribe-cli": "^0.1.1",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0"
   },
   "scripts": {
     "lint": "eslint *.js && htmllint *.html && stylelint *.css assets/styles/**/*.css",
     "build": "npm run --scripts-prepend-node-path=true lint && grunt",
-    "publish": "npm run --scripts-prepend-node-path=true build && ink publish",
+    "publish": "npm run --scripts-prepend-node-path=true build && scribe publish --size A4",
     "clean": "grunt clean",
     "start": "grunt run"
   }
