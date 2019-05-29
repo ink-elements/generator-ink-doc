@@ -15,6 +15,9 @@
 }
 
 @page title {
+  @bottom-center {
+    content: none;
+  }
 }
 
 #cover {
@@ -41,7 +44,6 @@
 }
 
 @media screen {
-
   body {
     background-color: whitesmoke;
   }
@@ -54,5 +56,4 @@
     margin-bottom: 2em;
     box-shadow: 0 0 0 1px var(--color-mbox);
   }
-
 }
