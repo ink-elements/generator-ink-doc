@@ -18,15 +18,15 @@
     "polymer-3"
   ],
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-node": "^9.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "husky": "^3.0.0",
-    "jest": "^24.8.0",
-    "lint-staged": "^9.0.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.0.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
     "merge": ">=1.2.1",
     "shelljs": "^0.8.3",
     "yeoman-assert": "^3.1.1",
@@ -36,8 +36,8 @@
     "npm": ">= 6.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^4.0.1",
-    "chalk": "^2.4.2"
+    "yeoman-generator": "^4.4.0",
+    "chalk": "^3.0.0"
   },
   "jest": {
     "testEnvironment": "node"
