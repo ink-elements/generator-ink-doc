@@ -159,4 +159,16 @@ describe('generator-ink-doc:app', () => {
       .then(() => assert.file('.gitignore'))
   })
 
+  it('creates web bundler config', () => {
+    return helpers.run(inkDoc)
+      .withArguments(['test-project'])
+      .then(() => assert.file('rollup.config.js'))
+  })
+
+  it('creates web component script', () => {
+    return helpers.run(inkDoc)
+      .withArguments(['test-project'])
+      .then(() => assert.file('.gitignore'))
+  })
+
 })

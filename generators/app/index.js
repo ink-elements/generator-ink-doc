@@ -77,6 +77,16 @@ module.exports = class extends Generator {
       this.templatePath('gitignore'),
       this.destinationPath('.gitignore')
     )
+
+    this.fs.copy(
+      this.templatePath('rollup.config.js'),
+      this.destinationPath('rollup.config.js')
+    )
+
+    this.fs.copy(
+      this.templatePath('scripts/ink-elements.js'),
+      this.destinationPath('scripts/ink-elements.js')
+    )
   }
 
   install() {

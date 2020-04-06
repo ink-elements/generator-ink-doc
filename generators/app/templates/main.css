@@ -1,7 +1,7 @@
 @import url('vendor/normalize.css/normalize.css');
 
 @page {
-  size: A4;
+  size: a4;
 
   @bottom-center {
     content: counter(page);

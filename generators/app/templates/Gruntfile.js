@@ -38,15 +38,6 @@ module.exports = function (grunt) {
       assets: {
         files: ['assets/**'],
         tasks: ['copy:assets']
-      },
-      node_modules: {
-        files: [
-          'node_modules/ink-elements/**',
-          'node_modules/@webcomponents/**',
-          'node_modules/@polymer/**',
-          'node_modules/pagedjs/**'
-        ],
-        tasks: ['npmcopy:dist']
       }
     },
 
@@ -71,11 +62,7 @@ module.exports = function (grunt) {
           destPrefix: 'dist/html/vendor'
         },
         files: {
-          '@polymer': '@polymer',
-          '@webcomponents': '@webcomponents',
-          'ink-elements': 'ink-elements',
-          'normalize.css': 'normalize.css',
-          'pagedjs': 'pagedjs'
+          'normalize.css': 'normalize.css'
         }
       }
     }
@@ -88,5 +75,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-npmcopy')
 
   grunt.registerTask('default', ['copy', 'npmcopy'])
-  grunt.registerTask('run', ['clean', 'default', 'connect', 'watch'])
+  grunt.registerTask('run', ['default', 'connect', 'watch'])
 }
