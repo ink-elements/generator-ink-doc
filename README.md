@@ -13,7 +13,7 @@ npm install -g generator-ink-doc
 Then generate your new project:
 
 ```bash
-yo ink-doc
+yo ink-doc <project_name>
 ```
 
 ## License
