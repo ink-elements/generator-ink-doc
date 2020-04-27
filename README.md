@@ -1,4 +1,4 @@
-# generator-ink-doc [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+# generator-ink-doc [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Known Vulnerabilities][synk-image]][synk-url]
 >
 
 ## Installation
@@ -24,3 +24,5 @@ MIT © [Ricardo Gladwell](https://gladwell.me)
 [npm-url]: https://npmjs.org/package/generator-ink-doc
 [travis-image]: https://travis-ci.org/ink-elements/generator-ink-doc.svg?branch=master
 [travis-url]: https://travis-ci.org/ink-elements/generator-ink-doc
+[synk-image]: https://snyk.io/test/github/ink-elements/generator-ink-doc/badge.svg?targetFile=package.json
+[synk-url]: https://snyk.io/test/github/ink-elements/generator-ink-doc?targetFile=package.json
