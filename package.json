@@ -37,7 +37,8 @@
   },
   "dependencies": {
     "yeoman-generator": "^4.9.0",
-    "chalk": "^4.0.0"
+    "chalk": "^4.0.0",
+    "snyk": "^1.316.1"
   },
   "jest": {
     "testEnvironment": "node"
@@ -50,8 +51,11 @@
   "scripts": {
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": "ink-elements/generator-ink-doc",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
